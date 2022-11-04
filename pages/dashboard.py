@@ -19,10 +19,10 @@ import streamlit as st
 
 # In[2]:
 
-pd.read_csv('df2')
-pd.read_csv('dfPROV')
-pd.read_csv('dfPROV_totaal')
-pd.read_csv('df_scatterdata')
+df2= pd.read_csv('df2')
+dfPROV= pd.read_csv('dfPROV')
+dfPROV_totaal= pd.read_csv('dfPROV_totaal')
+df_scatterdata= pd.read_csv('df_scatterdata')
 
 
 # In[ ]:
