@@ -161,7 +161,7 @@ st.set_page_config(layout='wide')
 
 
 #row 1 (scatter's)
-a1, a2 = st.columns((4,6))
+a1, a2 = st.columns((3,7))
 with a1:
     st.markdown('### Dashboard huizenprijs')
     st.plotly_chart(fig5)
