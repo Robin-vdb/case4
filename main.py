@@ -38,7 +38,6 @@ st.markdown('### api')
 st.code('''data = cbsodata.get_data('83625NED')
 data3= cbsodata.get_data('83162NED') 
 data2= cbsodata.get_data('84571NED')''',language= 'python')
-st.dataframe(df1)
 
 
 # In[ ]:
