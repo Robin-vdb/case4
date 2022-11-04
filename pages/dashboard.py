@@ -19,59 +19,10 @@ import streamlit as st
 
 # In[2]:
 
-
-data = cbsodata.get_data('83625NED')
-data3= cbsodata.get_data('83162NED')
-data2= cbsodata.get_data('84571NED')
-
-
-# In[3]:
-
-
-df1 = pd.DataFrame(data)
-
-
-# In[4]:
-
-
-
-jaartallen2= ['2015', '2016', '2017', '2018', '2019', '2020', '2021']
-dfhuizen= df1.loc[df1['RegioS'].str.contains('(PV)')]
-dfhuizen= dfhuizen.rename(columns= {'HuurverhogingInclusiefHuurharmonisatie_1': 'huurverhoging'}, index= {'Fryslân (PV)': 'Friesland (PV)'})
-dfhuizen= dfhuizen.loc[dfhuizen['Perioden'].isin(['2015', '2016', '2017', '2018', '2019', '2020', '2021'])]
-
-df_tevredenheid= pd.DataFrame(data2)
-df_tevredenheid= df_tevredenheid.rename(columns={'Regio': 'RegioS'})
-df_tevredenheid= df_tevredenheid.set_index('RegioS')
-df_tevredenheid= df_tevredenheid.drop(columns= ['ID','TevredenheidMetDeHuidigeWoonomgeving_2'])
-
-dftotaal = df_tevredenheid.loc[df_tevredenheid['EigenaarOfHuurder'] == 'Totaal']
-dftotaal2 = dftotaal.loc[dftotaal['Perioden']== '2021']
-dftotaal3 = dftotaal2.loc[dftotaal2['Woningkenmerken']== 'Totaal woningen']
-dftotaal4 = dftotaal3.loc[dftotaal3['Marges'] == 'Waarde']
-
-dfPROV_tevredenheid= dftotaal4.filter(like='(PV)', axis=0)
-dfPROV_tevredenheid2= dfPROV_tevredenheid.rename(columns= {'TevredenheidMetDeHuidigeWoning_1' : 'Woontevredenheid'})
-
-df2 = df1.pivot(index='RegioS', columns='Perioden', values='GemiddeldeVerkoopprijs_1')            .reset_index()
-df2.columns.name=None
-
-dfPROV = df2.loc[df2['RegioS'].str.contains("(PV)")]
-dfPROV2= dfPROV.set_index('RegioS')
-dfPROV3 = dfPROV2.rename(index= {'Fryslân (PV)': 'Friesland (PV)'})
-
-dfPROV_totaal= dfPROV3.merge(dfPROV_tevredenheid2, on= 'RegioS',how= 'outer')
-
-dfGEM = df2.drop([164,201,203,207,236,359,446,447,448,473,494,618,676,715,462,727,728])
-dfGEM = dfGEM.set_index('RegioS')
-
-df_huur= pd.DataFrame(data3)
-df_huur= df_huur.loc[df_huur['RegioS'].str.contains('(PV)')]
-df_huur= df_huur.rename(columns= {'HuurverhogingInclusiefHuurharmonisatie_1': 'huurverhoging', 'HuurverhogingExclusiefHuurharmonisatie_2': 'huurverhogin_exclusief_Huurharmonisatie'}, index= {'Fryslân (PV)': 'Friesland (PV)'})
-
-df_scatterdata= dfhuizen.merge(df_huur, how= 'inner', on= ['Perioden', 'RegioS'])
-df_scatterdata= df_scatterdata.rename(columns={'GemiddeldeVerkoopprijs_1': 'verkoopprijs (€)',})
-df_scatterdata= df_scatterdata.drop(columns= ['ID_x', 'ID_y'])
+pd.read_csv('df2')
+pd.read_csv('dfPROV')
+pd.read_csv('dfPROV_totaal')
+pd.read_csv('df_scatterdata')
 
 
 # In[ ]:
