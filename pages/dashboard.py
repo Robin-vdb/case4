@@ -112,7 +112,7 @@ st.set_page_config(layout='wide')
 
 
 #row 1 (scatter's)
-a1, a2 = st.columns((3,7))
+a1, a2 = st.columns((4,6))
 with a1:
     st.markdown('### Dashboard huizenprijs')
     st.plotly_chart(fig5)
@@ -138,7 +138,7 @@ with b2:
 c1, c2= st.columns((7,3))
 with c1:
     st.plotly_chart(fig4)
-c2.write('CBS Statline. (n.d.). Retrieved November 4, 2022, from https://opendata.cbs.nl/statline/')
+c2.write('CBS Statline. (n.d.). Retrieved November 4, 2022, from https://opendata.cbs.nl/statline/,  Va-eindpresentatie. (2022, November 3). Github. https://github.com/Robin-vdb/case4')
 
 
 # In[ ]:
