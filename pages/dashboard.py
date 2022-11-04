@@ -163,7 +163,7 @@ st.set_page_config(layout='wide')
 #row 1 (scatter's)
 a1, a2 = st.columns((4,6))
 with a1:
-    st.markdown('### scatterplots')
+    st.markdown('### Dashboard huizenprijs')
     st.plotly_chart(fig5)
 with a2:
     st.plotly_chart(fig6)
@@ -175,10 +175,8 @@ with a2:
 #row 2 (box + hist)
 b1, b2 = st.columns((5,5))
 with b1:
-    st.markdown('### boxplot')
     st.plotly_chart(fig)
 with b2:
-    st.markdown('### histogram')
     st.plotly_chart(fig1)
 
 
@@ -186,9 +184,8 @@ with b2:
 
 
 #row 3 (linear regression model)
-c1, c2= st.columns(7, 3)
+c1, c2= st.columns((7,3))
 with c1:
-    st.markdown('### linear regression')
     st.plotly_chart(fig4)
 c2.write('CBS Statline. (n.d.). Retrieved November 4, 2022, from https://opendata.cbs.nl/statline/')
 
