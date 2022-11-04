@@ -118,11 +118,6 @@ dfPROV = dfLOC.loc[dfLOC['Regio'].str.contains("(PV)")]
 
 
 
-
-
-# In[19]:
-
-
 dfGEM = dfLOC.drop([7,23,92,95,100,125,164,196,201,203,207,236,253,255,257,275,304,319,339,359,364,386,389,402,416,446,447,448,462,473,494,503,507,526,573,605,618,676,685,686,715,700,727,728],axis=0, inplace=True)
 #dfGEM.drop([23,100], axis=0)
 dfGEM= dfLOC[dfLOC['latitude'].notna()]
@@ -133,27 +128,8 @@ dfGEM= dfLOC[dfLOC['latitude'].notna()]
 
 
 
-
-# In[13]:
-
-
 import folium 
 from folium import plugins
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[16]:
 
 
 m = folium.Map(location=[52.1009166, 5.6462914], tiles= None, zoom_start=7)
@@ -176,57 +152,4 @@ folium.LayerControl(position = 'bottomleft', collapsed = False).add_to(m)
 
 m
 
-
-# In[17]:
-
-
-str(dfGEM['2014'][0]) != 'nan'
-
-
-# In[18]:
-
-
-dfGEM['latitude'][0]
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
+st.map(m)
