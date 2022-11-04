@@ -138,7 +138,10 @@ with b2:
 c1, c2= st.columns((7,3))
 with c1:
     st.plotly_chart(fig4)
-c2.write('CBS Statline. (n.d.). Retrieved November 4, 2022, from https://opendata.cbs.nl/statline/,  Va-eindpresentatie. (2022, November 3). Github. https://github.com/Robin-vdb/case4')
+with c2:
+  st.markdown('### bronnenlijst')
+  st.write('CBS Statline. (n.d.). Retrieved November 4, 2022, from https://opendata.cbs.nl/statline/,  Va-eindpresentatie. (2022, November 3). Github. https://github.com/Robin-vdb/case4')
+  
 
 
 # In[ ]:
