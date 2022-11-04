@@ -4,7 +4,7 @@
 # In[1]:
 
 
-get_ipython().system('pip install cbsodata')
+#get_ipython().system('pip install cbsodata')
 get_ipython().system('pip install geopy')
 
 
