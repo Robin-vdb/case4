@@ -5,7 +5,7 @@
 
 
 #get_ipython().system('pip install cbsodata')
-#get_ipython().system('pip install geopy')
+get_ipython().system('pip install geopy')
 
 
 # In[2]:
@@ -190,7 +190,7 @@ for i in range(1995,2022):
 folium.LayerControl(position = 'bottomleft', collapsed = False).add_to(m)   
 
 m
-
+st.map(m)
 
 # In[17]:
 
