@@ -20,7 +20,7 @@ import streamlit
 
 dfMarker = pd.read_csv('Markermap.csv')
 
-st.code("
+st.code('''
 for i in range(1995,2022):
     globals()['%s' %i] = folium.FeatureGroup(name=i, control = True, overlay = False)
     m.add_child(globals()['%s' %i])        
@@ -31,7 +31,7 @@ for i in range(1995,2022):
 
 folium.LayerControl(position = 'bottomleft', collapsed = False).add_to(m)   
 
-m")
+m''')
 
 
 import folium 
