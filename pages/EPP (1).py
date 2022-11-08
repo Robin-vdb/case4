@@ -20,14 +20,7 @@ import streamlit
 
 dfMarker = pd.read_csv('Markermap.csv')
 
-st.code("m = folium.Map(location=[52.1009166, 5.6462914], tiles= None, zoom_start=7)
-basemap = folium.FeatureGroup(name = 'basemap', overlay = True, control = False)
-folium.TileLayer(tiles = 'OpenStreetMap').add_to(basemap)
-basemap.add_to(m)
-
-# Om het jaar te selecteren, hier alvast wat tips:
-# Maak per jaar folium featuregroups aan
-
+st.code("
 for i in range(1995,2022):
     globals()['%s' %i] = folium.FeatureGroup(name=i, control = True, overlay = False)
     m.add_child(globals()['%s' %i])        
