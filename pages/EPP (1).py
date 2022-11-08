@@ -15,12 +15,6 @@ import cbsodata
 import numpy as np
 
 
-
-dfGEM = dfLOC.drop([7,23,92,95,100,125,164,196,201,203,207,236,253,255,257,275,304,319,339,359,364,386,389,402,416,446,447,448,462,473,494,503,507,526,573,605,618,676,685,686,715,700,727,728],axis=0, inplace=True)
-#dfGEM.drop([23,100], axis=0)
-dfGEM= dfLOC[dfLOC['latitude'].notna()]
-dfGEM.to_csv('Markermap.csv')
-
 dfMarker = pd.read_csv('Markermap.csv')
 
 import folium 
