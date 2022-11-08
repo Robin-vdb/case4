@@ -13,7 +13,9 @@ import pandas as pd
 #import Seaborn as sb 
 import cbsodata
 import numpy as np
-
+import streamlit_folium as st_folium
+from streamlit_folium import folium_static
+import streamlit
 
 dfMarker = pd.read_csv('Markermap.csv')
 
@@ -41,4 +43,4 @@ folium.LayerControl(position = 'bottomleft', collapsed = False).add_to(m)
 
 m
 
-st.map(m)
+a = folium_static(m)
