@@ -62,4 +62,4 @@ jinja2
 geographiclib==1.52 
 geopy==2.2.0
 streamlit_folium==0.6.13
-folium==0.12.1
+
