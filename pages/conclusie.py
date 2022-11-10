@@ -15,7 +15,5 @@ st.write('Mensen in Noor- en Zuid-holland die veel meer voor een huis betalen zi
 st.write('wel iets gestegen ten opzichte van 2018 (landelijk)')
 
 st.title('bronnenlijst')
-st.write('Ministerie van Algemene Zaken. (2022, November 9). Wat is de maximale huurverhoging in 2021? Rijksoverheid.nl. 
-         'https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/wat-is-de-maximale-huurverhoging-in-2021')
-st.write('Centraal Bureau voor de Statistiek. (2022, June 9). Tevredenheid met woning licht opgelopen. 
-         'Centraal Bureau Voor De Statistiek. https://www.cbs.nl/nl-nl/nieuws/2022/23/tevredenheid-met-woning-licht-opgelopen')
+st.write('Ministerie van Algemene Zaken. (2022, November 9). Wat is de maximale huurverhoging in 2021? Rijksoverheid.nl.https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/wat-is-de-maximale-huurverhoging-in-2021')
+st.write('Centraal Bureau voor de Statistiek. (2022, June 9). Tevredenheid met woning licht opgelopen.Centraal Bureau Voor De Statistiek. https://www.cbs.nl/nl-nl/nieuws/2022/23/tevredenheid-met-woning-licht-opgelopen')
