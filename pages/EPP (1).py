@@ -24,6 +24,7 @@ dfMarker = pd.read_csv('Markermap.csv')
 import folium 
 from folium import plugins
 
+st.title('Gemiddelde verkoop map per jaar')
 
 m = folium.Map(location=[52.1009166, 5.6462914], tiles= None, zoom_start=7)
 basemap = folium.FeatureGroup(name = 'basemap', overlay = True, control = False)
