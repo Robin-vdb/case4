@@ -11,7 +11,7 @@ st.write('de huurprijs stijgt met de huizenprijs mee. Maar huurharmonisatie werk
 st.write('juli 2021 tm juli 2021 geen stijging')
 
 st.title('Woontevredenheid')
-st.write('Mensen in Noor- en Zuid-holland die veel meer voor een huis betalen zijn er minder blij met hun huis.')
+st.write('Mensen in Noord- en Zuid-holland die veel meer voor een huis betalen zijn er minder blij met hun huis.')
 st.write('wel iets gestegen ten opzichte van 2018 (landelijk)')
 
 st.title('bronnenlijst')
