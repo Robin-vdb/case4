@@ -45,8 +45,7 @@ for i in range(1995,2022):
 
 folium.LayerControl(position = 'bottomleft', collapsed = False).add_to(m)   
 
-
-m
+st_data = folium_static(m)
 
 
 
