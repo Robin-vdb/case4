@@ -141,7 +141,7 @@ with c1:
     st.plotly_chart(fig4)
 with c2:
   st.markdown('### bronnenlijst')
-  st.write('CBS Statline. (n.d.). Retrieved November 4, 2022, from https://opendata.cbs.nl/statline/,  Va-eindpresentatie. (2022, November 3). Github. https://github.com/Robin-vdb/case4')
+  st.write('CBS Statline. (n.d.). Retrieved November 4, 2022, from https://opendata.cbs.nl/statline/,  Va-eindpresentatie. (2022, November 3). Github. https://github.com/Robin-vdb/case4, Stack Overflow - Where Developers Learn, Share, & Build Careers. (n.d.). Stack Overflow. https://stackoverflow.com/')
   
 
 
