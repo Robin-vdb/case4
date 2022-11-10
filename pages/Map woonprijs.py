@@ -25,7 +25,7 @@ import folium
 from folium import plugins
 
 st.title('Gemiddelde verkoop map per jaar')
-
+st.write('Op deze pagina wordt de dataset van woning prijzen door de jaren heen gevisualiseerd. Dit wordt gedaan in een flolium map. Zo is er te zien dat deze map de gemiddelde verkoop prijzen van huizen per gemeente aantoont')
 
 #clustermap
 m = folium.Map(location=[52.1009166, 5.6462914], tiles= None, zoom_start=7)
