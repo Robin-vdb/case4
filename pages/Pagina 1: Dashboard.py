@@ -21,7 +21,7 @@ import streamlit as st
 
 df2= pd.read_csv('df2')
 dfPROV= pd.read_csv('dfPROV')
-dfPROV_totaal= pd.read_csv('dfPROV_totaal', index_col= 'RegioS')
+dfPROV_totaal= pd.read_csv('dfPROV_totaal')
 df_scatterdata= pd.read_csv('df_scatterdata')
 
 
