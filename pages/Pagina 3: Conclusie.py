@@ -8,7 +8,7 @@ st.write('inflatie')
 
 st.title('huurprijs')
 st.write('de huurprijs stijgt met de huizenprijs mee. Maar huurharmonisatie werkt ook niet mee')
-st.write('juli 2021 tm juli 2021 geen stijging')
+st.write('juli 2021 tm juli 2022 geen stijging')
 
 st.title('Woontevredenheid')
 st.write('Mensen in Noord- en Zuid-holland die veel meer voor een huis betalen zijn er minder blij met hun huis.')
