@@ -78,7 +78,6 @@ fig1.update_layout(updatemenus= [dict(active=0, buttons=list([dict(label= 'alles
 
 # In[7]:
 
-
 fig4= px.scatter(dfPROV_totaal, x= '2021', y= 'Woontevredenheid', hover_data= {'index': dfPROV_totaal.index}, labels= {'2021': 'huizenprijs 2021 (€)'}, title= 'woontevredenheid tegenover huizenprijs (2021)', trendline= 'ols')
 
 
